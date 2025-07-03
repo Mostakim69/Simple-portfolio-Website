@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostakim Hosen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .bg-dots {
+        background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+        background-size: 20px 20px;
+      }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-300 bg-dots">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-900/80 backdrop-blur-md shadow-lg fixed w-full top-0 z-20">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                        <a href="#" class="text-2xl font-bold text-white">MH</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-300 hover:text-white transition-colors duration-300">Home</a>
+                <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">About</a>
+                <a href="#experience" class="text-gray-300 hover:text-white transition-colors duration-300">Experience</a>
+                <a href="#education" class="text-gray-300 hover:text-white transition-colors duration-300">Education</a>
+                <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900/80 backdrop-blur-md">
+            <a href="#home" class="block py-3 px-6 text-sm text-gray-300 hover:bg-gray-800 transition-colors duration-300">Home</a>
+            <a href="#about" class="block py-3 px-6 text-sm text-gray-300 hover:bg-gray-800 transition-colors duration-300">About</a>
+            <a href="#experience" class="block py-3 px-6 text-sm text-gray-300 hover:bg-gray-800 transition-colors duration-300">Experience</a>
+            <a href="#education" class="block py-3 px-6 text-sm text-gray-300 hover:bg-gray-800 transition-colors duration-300">Education</a>
+            <a href="#contact" class="block py-3 px-6 text-sm text-gray-300 hover:bg-gray-800 transition-colors duration-300">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-800 opacity-75"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <p class="text-2xl sm:text-3xl text-white mb-4">Hi, I'm Md Mostakim Hosen 👋</p>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
+                <span class="text-teal-400" id="typed"></span>
+            </h1>
+            
+            <a href="#contact" class="mt-10 inline-block bg-teal-500 text-white font-bold py-4 px-8 rounded-full hover:bg-teal-600 transition-all duration-300 transform hover:scale-105">
+                Let's Connect <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-gray-800/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-white mb-12">
+                <i class="fas fa-user-circle mr-3"></i>About Me
+            </h2>
+            <div class="flex flex-wrap items-center">
+                <div class="w-full md:w-1/2 flex justify-center mb-10 md:mb-0">
+                    <div class="w-64 h-64 rounded-full bg-teal-500/20 flex items-center justify-center">
+                        <img src="https://i.pravatar.cc/300" alt="About Me" class="rounded-full w-60 h-60 shadow-2xl">
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 md:pl-12">
+                    <p class="text-gray-400 leading-relaxed text-lg">
+                        Hello! I'm a dedicated web developer with a passion for creating beautiful, functional, and user-centered digital experiences. With a strong foundation in front-end and back-end technologies, I enjoy turning complex problems into simple, elegant solutions.
+                    </p>
+                    <p class="text-gray-400 leading-relaxed mt-6 text-lg">
+                        When I'm not coding, you can find me exploring the latest technology trends, contributing to open-source projects, or enjoying a good cup of coffee.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-white mb-12">
+                <i class="fas fa-briefcase mr-3"></i>Work Experience
+            </h2>
+            <div class="relative border-l-4 border-teal-500/30 pl-10">
+                <div class="mb-12 relative">
+                    <div class="absolute -left-12 -top-1.5 w-8 h-8 bg-gray-900 border-4 border-teal-500 rounded-full"></div>
+                    <h3 class="text-2xl font-bold text-white">Junior Web Developer</h3>
+                    <p class="text-teal-400 font-semibold">ABC Company | 2020 - Present</p>
+                    <p class="mt-3 text-gray-400">Leading the development of high-traffic web applications, mentoring junior developers, and implementing modern front-end frameworks to enhance user experience and performance.</p>
+                </div>
+                <div class="mb-12 relative">
+                    <div class="absolute -left-12 -top-1.5 w-8 h-8 bg-gray-900 border-4 border-teal-500 rounded-full"></div>
+                    <h3 class="text-2xl font-bold text-white">Web Developer</h3>
+                    <p class="text-teal-400 font-semibold">XYZ Inc. | 2018 - 2020</p>
+                    <p class="mt-3 text-gray-400">Developed and maintained responsive websites for various clients, focusing on performance, accessibility, and cross-browser compatibility. Collaborated with designers to bring mockups to life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-24 bg-gray-800/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-white mb-12">
+                <i class="fas fa-graduation-cap mr-3"></i>Education
+            </h2>
+            <div class="flex flex-wrap justify-center -mx-4">
+                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                    <div class="bg-gray-900/70 p-8 rounded-lg shadow-2xl h-full transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-2xl font-bold text-white">SSC (Science)</h3>
+                        <p class="text-teal-400 font-semibold mt-1">Mohiskundi High School</p>
+                        <p class="mt-4 text-gray-400">Achieved GPA 5.00 out of 5.00.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                    <div class="bg-gray-900/70 p-8 rounded-lg shadow-2xl h-full transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-2xl font-bold text-white">Diploma in Engineering, Computer Technology</h3>
+                        <p class="text-teal-400 font-semibold mt-1">Rajshahi Polytechnic Institute</p>
+                        <p class="mt-4 text-gray-400">Achieved a CGPA of 3.57 out of 4.00. Gained a strong foundation in computer science principles, programming, and web development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-white mb-12">
+                <i class="fas fa-paper-plane mr-3"></i>Get In Touch
+            </h2>
+            <div class="max-w-2xl mx-auto">
+                <form action="#" method="POST" id="contact-form" class="bg-gray-800/50 p-8 rounded-lg shadow-2xl">
+                    <div class="mb-6">
+                        <label for="name" class="block text-gray-400 mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-gray-900/70 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 text-white transition-colors">
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-gray-400 mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-gray-900/70 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 text-white transition-colors">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-400 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 bg-gray-900/70 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 text-white transition-colors"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-teal-500 text-white font-bold py-4 px-8 rounded-full hover:bg-teal-600 transition-all duration-300 transform hover:scale-105">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900/80 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <div class="flex justify-center space-x-8 mb-6">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors duration-300 text-2xl"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors duration-300 text-2xl"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors duration-300 text-2xl"><i class="fab fa-github"></i></a>
+            </div>
+            <p>&copy; 2025 Md Mostakim Hosen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your Public Key
+        })();
+
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+                .then(function() {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Message Sent!',
+                        text: 'Your message has been sent successfully.',
+                        background: '#1a202c',
+                        color: '#a0aec0',
+                        confirmButtonColor: '#38b2ac'
+                    });
+                    contactForm.reset();
+                }, function(error) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Failed to send message. Please try again later.',
+                        background: '#1a202c',
+                        color: '#a0aec0',
+                        confirmButtonColor: '#e53e3e'
+                    });
+                    console.log('FAILED...', error);
+                });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        new Typed('#typed', {
+            strings: ["Hi, I'm Md Mostakim Hosen 👋", "I'm a Web Developer.", "I build things for the web."],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true,
+            cursorChar: '|',
+        });
+    </script>
+
+</body>
+</html>
